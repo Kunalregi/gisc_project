@@ -1,0 +1,541 @@
+<html>
+<style>
+body{
+background-image:url("pot.jpg");
+background-repeat:no-repeat;
+background-size:50000px;
+background-attachement:fixed;
+}
+h1{
+background-color:#009933;
+color:white;
+margin:none;
+valign:center;
+}
+.but{
+color:black;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+}
+a:hover{
+color:hotpink;
+}
+a:active{
+color:red;
+}
+
+h2{
+color:white;
+}
+.logo{
+height:35;
+width:35;
+|
+dropdown{
+position:relative;
+display:inline-block;
+}
+.dropdown-content{
+display:none;
+position:absolute;
+z-index;1;
+}
+.dropdownhover.dropdown-content{
+display:block;
+}
+
+body {
+  margin: 0;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+.img1 { background-image: url("1.jpg"); }
+.img2 { background-image: url("4.jpg"); }
+.img3 { background-image: url("5.jpg"); }
+.img4 { background-image: url("2.png"); }
+.img5 { background-image: url("3.png"); }
+.img6 { background-image: url("5.jpg"); }
+
+}
+
+</style>
+<body>
+<h1 ALIGN="center" border="dotted"> <img class="logo" src="logo.jpeg">GLOBAL INSTUTE OF COMPUTER STUDIES</img> </h1>
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color: #009933;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #009933;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" class="navbar" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="login.html">LOGIN</a>  
+  <a href="register.html">REGISTER</a>  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color:black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #009933;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.eleven{
+margin-left:100;
+margin-right:10;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="first.jpeg" class="eleven" style="width:85%; height:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="second.jpeg" class="eleven" style="width:85%; height:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="third.jpeg" class="eleven"  style="width:85%; height:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+img{
+height:200;
+width:200;
+}
+.row {
+  margin: 10px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #009933;
+  padding: 10px;
+}
+.show {
+  display: block;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #009933;
+  cursor: pointer;
+   color:white;
+}
+
+.btn:hover {
+  background-color: red;
+  color:white;
+}
+
+.btn.active {
+  background-color: red;
+  color: white;
+}
+p{
+color:white;
+}
+a:hover{
+color:hotpink;
+}
+a:active{
+color:red;
+}
+a{
+text-decoration:none;
+color:white;
+}
+</style>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all courses</button>
+  <button class="btn" onclick="filterSelection('nature')"> front end</button>
+  <button class="btn" onclick="filterSelection('cars')"> back end</button>
+  <button class="btn" onclick="filterSelection('people')"> animation</button>
+</div>
+
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="html.png">
+      <p><a href="html.pdf">HTML,CSS</a></p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="js.png">
+      <p><a href="js.pdf">JAVA SCRIPT</a></p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="php.png">
+      <p><a href="php.pdf">PHP</a></p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="sql.png" >
+      <p><a href="sql.pdf">SQL</a></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="java.png">
+      <p><a href="java.pdf" >JAVA</a></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="python.png">
+      <p><a href="python.pdf">PYTHON</a></p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="cg.jpg">
+      <p><a href="vfx.pdf">BASIC EDITING</a></p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="vfx.jpg">
+   
+      <p><a href="vfx.pdf">VIRTUAL EFFECTS</a></p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="bld.jpg">
+      <p><a href="css.pdf">BLENDING</a></p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: #009933; 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+<style>
+.but{
+text-decoration:none;
+background-color:#009933;
+color:white;
+}
+.mat{
+background-color:#009933;
+color:white;
+font-size:30;
+}
+</style>
+<div class="container">
+  <img src="4.jpg" style="width:100%; height:100%">
+  <div class="content">
+    <p>GISC provides various computer programming courses for affordable cost.
+	There are among 3000+students learning in GISC. 
+	we provide various lab facilities and daily assesment based quizses.
+	we have advanced and expirenced staffs and also have weekly guest lectures also.
+	GISC have various scope to recuirt direct placement to IT companies.
+	GISC have a collaboration with ZOHO and CSC and NIIT instutions.
+	We have various branch all over India and students can continue the course during their holidays also.
+	visit <a class="but" href="about.html">about us</a> for details to contact us.
+	</p>
+  </div>
+</div>
+<p class="mat">
+This website is made for google application(dsc) course project.<br>
+<img src="logo.jpeg">GISC</img><br>
+global instute of computer studies is an online tutorial to learn computer courses<br>
+for free and it also has the option for attempting for quiz so that you can <br>
+test yourself. It has 9 free courses. <br>
+For any queries: gisc@gmail.com
+</p class="mat">
+</body>
+</html>
